@@ -147,6 +147,8 @@ p {
   flex-shrink: 0;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: url(images/people-office.png);
+  background-size: cover;
 }
 
 .main-title {
@@ -205,6 +207,21 @@ p {
   overflow: hidden;
 }
 
+.icons-second-sct {
+  fill: var(--IRIS, #4d5ae5);
+  width: 264px;
+  height: 112px;
+  border: solid rgba(142, 143, 153, 1) 1px;
+  border-radius: 4px;
+}
+
+.icons-sct {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
 .section-second {
   display: flex;
 }
@@ -216,6 +233,8 @@ p {
   justify-content: space-between;
   gap: 24px;
   padding-left: 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .list-items-section-two {
@@ -229,6 +248,7 @@ p {
   color: #2e2f42;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .text {
@@ -274,6 +294,23 @@ p {
   text-align: center;
 }
 
+.div-sites-icons-list {
+  display: flex;
+  gap: 24px;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+.div-sites-icons {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(77, 90, 229, 1);
+  border: none;
+  border-radius: 50px;
+  padding: 12px;
+}
+
 /* Section 4 */
 /* Our potfolio */
 
@@ -312,6 +349,7 @@ p {
 
 .footer-container {
   display: block;
+  width: 264;
   align-items: center;
   justify-content: flex-start;
 }
@@ -346,4 +384,46 @@ p {
 .logo-studio {
   color: #f4f4fd;
   line-height: 1.17;
+}
+
+.items-title {
+  color: var(--WHITE, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.all-footer {
+  display: flex;
+  margin-left: 156px;
+  margin-right: 692px;
+}
+
+.div-footer-social-links {
+  display: block;
+  width: 208px;
+  height: auto;
+}
+
+.container-footer-social-links {
+  margin-left: 120px;
+}
+
+.div-sites-icons-list-footer {
+  display: flex;
+  gap: 16px;
+}
+
+.div-sites-icons-footer {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(77, 90, 229, 1);
+  border-radius: 50px;
+}
+
+.site-items-footer {
+  margin: 8px;
 }
