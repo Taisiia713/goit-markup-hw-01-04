@@ -57,6 +57,8 @@ p {
 
 .header-hero {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav-container {
@@ -75,14 +77,22 @@ p {
   gap: 40px;
 }
 
+.link-studio {
+  position: relative;
+  color: #404bbf;
+}
+
 .link-studio:hover::after {
   display: block;
   position: absolute;
   content: "";
+  left: 0;
+  bottom: -1px;
   width: 48px;
   height: 4px;
   border-radius: 2px;
-  background: var(--OCEAN, #404bbf);
+  background-color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 20px;
   margin-bottom: 0;
 }
@@ -144,6 +154,7 @@ p {
   font-style: normal;
   color: #434455;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list:hover,
@@ -163,8 +174,12 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(images/people-office.png);
+    url(./images/people-office.png);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -188,6 +203,7 @@ p {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button {
@@ -228,6 +244,16 @@ p {
   height: 112px;
   border: solid rgba(142, 143, 153, 1) 1px;
   border-radius: 4px;
+}
+
+.div-icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .icons-sct {
@@ -319,6 +345,7 @@ p {
   margin-right: 16px;
   margin-left: 16px;
   margin-top: 8px;
+  justify-content: center;
 }
 
 .sites-icons {
@@ -327,14 +354,31 @@ p {
   height: 40px;
   background-color: var(--IRIS, #4d5ae5);
   border-radius: 50px;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sites-icons:hover {
   background-color: rgba(64, 75, 191, 1);
 }
 
+.icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: #404bbf;
+}
+
 .site-items {
   margin: 12px;
+  fill: #f4f4fd;
 }
 
 /* Section 4 */
@@ -365,6 +409,7 @@ p {
   position: relative;
   overflow: hidden;
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .app-name-list {
@@ -388,17 +433,24 @@ p {
   transform: translateY(150%);
   transition: transform 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
-.overlay p {
-  color: var(--CLOUD, #f4f4fd);
+.over-p {
+  color: #f4f4fd;
+  top: 0;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5em;
-  letter-spacing: 0.32px;
-  margin-top: 40px;
-  margin-left: 32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-right: 32px;
+  transform: translateY(0%);
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(150%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-items-portfolio:hover .overlay {
@@ -418,6 +470,7 @@ p {
   width: 264;
   align-items: center;
   justify-content: flex-start;
+  margin-right: 120px;
 }
 
 .footer {
@@ -465,6 +518,23 @@ p {
   display: flex;
   margin-left: 156px;
   margin-right: 692px;
+  align-items: baseline;
+}
+
+.link-footer {
+  height: 100%;
+  width: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  background-color: #31d0aa;
 }
 
 .container-footer-social-links {
@@ -486,6 +556,7 @@ p {
   height: 40px;
   border-radius: 50px;
   background-color: rgba(77, 90, 229, 1);
+  fill: #f4f4fd;
 }
 
 .sites-icons-footer:hover {
