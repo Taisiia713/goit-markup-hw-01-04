@@ -79,9 +79,15 @@ p {
 
 .link-studio {
   position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-studio:hover::after {
+.link-studio:hover {
+  color: #404bbf;
+}
+
+.link-studio::after {
   display: block;
   position: absolute;
   content: "";
@@ -124,15 +130,12 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: rgba(46, 47, 66, 1);
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.header-list-items:hover {
-  color: #404bbf;
-}
-
+.header-list-items:hover,
 .header-list-items:focus {
   color: #404bbf;
 }
@@ -212,16 +215,15 @@ p {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
-  background-color: rgba(64, 75, 191, 1);
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #404bbf;
 }
 
 .button:focus {
   background-color: #404bbf;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Section 2 */
