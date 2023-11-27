@@ -290,7 +290,6 @@ p {
   color: #2e2f42;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-top: 8px;
 }
 
 .text {
@@ -342,8 +341,7 @@ p {
 .sites-icons-list {
   display: flex;
   gap: 24px;
-  margin-right: 16px;
-  margin-left: 16px;
+
   margin-top: 8px;
   justify-content: center;
 }
@@ -517,8 +515,6 @@ p {
 
 .all-footer {
   display: flex;
-  margin-left: 156px;
-  margin-right: 692px;
   align-items: baseline;
 }
 
@@ -536,10 +532,6 @@ p {
 .link-footer:hover,
 .link-footer:focus {
   background-color: #31d0aa;
-}
-
-.container-footer-social-links {
-  margin-left: 120px;
 }
 
 .sites-icons-list-footer {
